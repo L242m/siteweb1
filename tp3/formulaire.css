@@ -51,7 +51,7 @@ input[type="submit"] :hover{
     display: inline-block;
     padding: 10px 20px;
     margin: 20px;
-    background-color: #007bff; /* Couleur de fond du bouton */
+    background-color: #dda3ca; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte */
     text-decoration: none; /* Enlever la décoration du lien */
     border-radius: 5px; /* Coins arrondis */
@@ -62,5 +62,5 @@ input[type="submit"] :hover{
 }
 
 .home-button:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
+    background-color: #e2f79c; /* Couleur de fond au survol */
 }
