@@ -1,69 +1,91 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
 h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 3.5em;
+    color: rgb(228, 99, 213); /* Changement de la couleur du titre */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: glow-cyan 1.5s infinite alternate;
+    text-align: center;
 }
 
-p {
-    font-size: 1.2em;
-    margin-top: 10px;
+@keyframes glow-cyan {
+    0% {
+        text-shadow: 0 0 10px rgb(255, 151, 250), 0 0 20px rgb(247, 175, 251), 0 0 30px rgb(248, 174, 255), 0 0 40px rgb(246, 132, 214);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(238, 122, 222), 0 0 30px rgb(242, 152, 245), 0 0 40px rgb(250, 105, 231), 0 0 50px rgb(215, 136, 199);
+    }
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
+/* Iframe Styling */
 iframe {
-    border: none;
-}
-
-#navigation {
-    width: 30%;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-#content {
-    width: 65%;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.home-button {
-    display: inline-block;
-    padding: 10px 20px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(205, 60, 154, 0.8);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     margin: 20px;
-    background-color: #007bff; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte */
-    text-decoration: none; /* Enlever la décoration du lien */
-    border-radius: 5px; /* Coins arrondis */
-    font-size: 16px; /* Taille du texte */
-    font-weight: bold; /* Texte en gras */
-    text-align: center; /* Centrer le texte */
-    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
 }
 
-.home-button:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
+iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgb(221, 127, 188);
+}
+
+/* Link Styling */
+a {
+    font-size: 1.5em;
+    color: rgb(209, 134, 177); /* Changement de la couleur des liens */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background: rgba(233, 153, 211, 0.1);
+    border: 2px solid rgb(230, 118, 205); /* Changement de la bordure */
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+a:hover::before {
+    left: 100%;
+}
+
+a:hover {
+    color: rgb(226, 157, 201); /* Couleur du lien sur hover */
+    background: rgba(183, 125, 195, 0.3);
+    border-color: rgb(249, 145, 240); /* Bordure du lien sur hover */
+    transform: scale(1.1);
+}
+
+/* Floating animation for link */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+a {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Paragraph Styling */
+p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: rgb(235, 152, 227); /* Changement de couleur du texte */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
