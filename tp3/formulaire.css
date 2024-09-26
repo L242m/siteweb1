@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+    
 }
 h1{
     color: aquamarine;
@@ -42,6 +43,7 @@ input[type="submit"]{
 input[type="submit"] :hover{
     background-color: black;
     color: antiquewhite;
+    text-align: center;
 
     
 }
