@@ -69,7 +69,7 @@ a.link, .home-button {
 }
 
 a.link:hover, .home-button:hover {
-    background-color: #0056b3; 
+    background-color: #a2beff; 
     transform: translateY(-5px); 
 }
 
