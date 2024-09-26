@@ -1,0 +1,28 @@
+/* Style de la barre de navigation */
+nav {
+    background-color: #4CAF50;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #45a049;
+}

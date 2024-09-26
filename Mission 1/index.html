@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bienvenue sur le Site des Métiers de Développeur</h1>
+        <p class="subtitle">Découvrez différents métiers dans le domaine informatique.</p>
+        <div class="links">
+            <a href="fullstack.html" class="btn">Développeur Fullstack</a>
+            <a href="backend.html" class="btn">Développeur Backend</a>
+            <a href="frontend.html" class="btn">Développeur Frontend</a>
+            <a href="devops.html" class="btn">Ingénieur DevOps</a>
+            <a href="formulaire.html" class="btn">Formulaire</a>
+            <a href="ingetis.html" class="btn">Présentation de l'École</a>
+        </div>
+    </div>
+    <div id="background-animation"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    <script>
+      VANTA.CLOUDS({
+        el: "#background-animation",
+        color: 0xff007f, // Rose vif
+        backgroundColor: 0x1a1a2e, // Fond sombre
+        cloudColor: 0xff007f, // Rose vif
+        speed: 1.2,
+        density: 1.0
+      });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Contact</title>
+    <link rel="stylesheet" href="formulaire.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Contactez-nous</h1>
+
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom" placeholder="Votre nom" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Votre email" maxlength="100" required></td>
+                </tr>
+                <tr>
+                    <td><label for="departement">Département :</label></td>
+                    <td><input type="number" id="departement" name="departement" placeholder="Ex: 75" maxlength="2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message :</label></td>
+                    <td><textarea id="message" name="message" rows="5" cols="30" placeholder="Votre message" maxlength="500" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit">
+                        <input type="submit" value="Envoyer">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="back-home">
+            <a href="index.html" class="btn">Retour à l'accueil</a>
+        </div>
+    </div>
+
+    
+    <div id="background-animation"></div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+        VANTA.DOTS({
+            el: "#background-animation",
+            color: 0xff0099,
+            backgroundColor: 0x1a1a2e,
+            size: 4.00,
+            spacing: 30.00
+        });
+    </script>
+</body>
+</html>
