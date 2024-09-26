@@ -32,7 +32,7 @@
         text-decoration: none;
     }
     nav a:hover {
-        background-color: rgb(63, 200, 39);
+        background-color: rgb(144, 39, 200);
         color: black;
     }
     section{
@@ -48,6 +48,26 @@
         bottom: 0;
         width: 100%;
     }
+       
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #a554b9; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Enlever la décoration du lien */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centrer le texte */
+    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
 </style>
 </head>
 <body>
@@ -58,6 +78,7 @@
         <a href="#about">A propos</a>
         <a href="#contact">Contact</a>
     </nav>
+    <a href="../index.html" class="home-button">Retour à l'accueil</a>
     <section>
         <h2> A propos de nous</h2>
         <p>Ceci est une exemple de mise en page d'une page HTML avec des balises de base</p>
@@ -68,6 +89,7 @@
             <li>SEO et marketing</li>
         </ul>
     </section>
+    
     <footer>
         <p>&copy;2024 TP BTS SIO . Tous droits réservés</p>
     </footer>
