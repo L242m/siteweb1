@@ -1,66 +1,74 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aliceblue;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e1f2; /* Violet pâle */
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-h1{
-    color: aquamarine;
-}
-form{
-    background-color: blanchedalmond;
+
+.container {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     max-width: 400px;
-    margin: 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px ;
+    width: 100%;
+}
 
-
-}
-label{
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-input[type="text"], input[type="email"], textarea{
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 5px solid;
-    border-radius: 3px;
-    
-}
-input[type="submit"]{
-    background-color: aquamarine;
-    color: antiquewhite;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-input[type="submit"] :hover{
-    background-color: black;
-    color: antiquewhite;
+h1 {
     text-align: center;
-
-    
+    color: #d85d87; /* Rose */
 }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d85d87;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #d85d87; /* Rose */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f08fbf; /* Rose plus clair */
+}
+
 .home-button {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #dda3ca; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte */
-    text-decoration: none; /* Enlever la décoration du lien */
-    border-radius: 5px; /* Coins arrondis */
-    font-size: 16px; /* Taille du texte */
-    font-weight: bold; /* Texte en gras */
-    text-align: center; /* Centrer le texte */
-    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+    margin-top: 15px;
+    text-align: center;
+    color: #d85d87; /* Rose */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .home-button:hover {
-    background-color: #e2f79c; /* Couleur de fond au survol */
+    text-decoration: underline;
 }

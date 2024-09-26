@@ -1,22 +1,107 @@
-   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fddde6; 
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    color: #d85d87; 
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    animation: textSlide 1.2s ease-in-out;
+}
+
+@keyframes textSlide {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link, .home-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ec78d1; 
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+a.link:hover, .home-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-5px); 
+}
+
+a.link:before, .home-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(224, 166, 233, 0.2);
+    transition: left 0.4s ease;
+}
+
+a.link:hover:before, .home-button:hover:before {
+    left: 100%;
+}
+
 
 .home-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #007bff; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte */
-    text-decoration: none; /* Enlever la décoration du lien */
-    border-radius: 5px; /* Coins arrondis */
-    font-size: 16px; /* Taille du texte */
-    font-weight: bold; /* Texte en gras */
-    text-align: center; /* Centrer le texte */
-    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+    margin-top: 30px;
 }
 
-.home-button:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
+
+body {
+    background: linear-gradient(-45deg, #fddde6, #f39bcf, #fddde6, #f39bcf);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
 }
-body{
-    text-align: center;
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }

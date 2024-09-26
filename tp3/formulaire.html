@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
     <link rel="stylesheet" href="formulaire.css">
 </head>
 <body>
-    
-    
-    <h1>Contactez nous</h1>
-    <form action="#" method="post">
-    <label for="nom">Nom : </label>
-    <input type=" text" id="nom" name="nom" required>
 
-    <label for="email"> Prénom : </label>
-    <input type="email" id="email" name="email" required>
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
 
-    <label for="tel"> Tel :</label>
-    <input type="number" id="tel"  name="tel" required>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
 
-    <label for="message"> Message :</label>
-    <textarea name="message" id="message" rows="4" required></textarea>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-    <input type="submit" value="Envoyer">
-    <br>
-    <a href="../index.html" class="home-button">Retour à l'accueil</a>
+            <div class="form-group">
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
 
-</form>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
 
-    
+            <input type="submit" value="Envoyer" class="submit-btn">
+
+            <br>
+            <a href="../index.html" class="home-button">Retour à l'accueil</a>
+        </form>
+    </div>
+
+</body>
 </html>

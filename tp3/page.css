@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4e1f2; 
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: rgb(255, 158, 219);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+nav {
+    background-color: rgb(241, 103, 235);
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(144, 39, 200);
+    color: black;
+}
+
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Style pour les titres */
+h2, h3 {
+    color: rgb(241, 103, 235); /* Violet */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.home-button {
+    background-color: #a554b9;  
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3; 
+}
+
+
+footer {
+    background-color: rgb(241, 155, 238);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

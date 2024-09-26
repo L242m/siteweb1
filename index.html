@@ -3,34 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon Portfolio</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
+               background: linear-gradient(135deg, #ffb3df, #d49fff);
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+
         }
-        a {
+        header {
+            background-color: #ffffff;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
             color: #de63b1;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #a93b81;
             text-decoration: none;
             font-size: 1.5em;
-            display: block;
-            margin: 20px 0;
+            margin: 0 15px;
             transition: color 0.3s;
         }
-        a:hover {
-            color: #ff0000;
+        nav a:hover {
+            color: #5e0346;
         }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h2 {
+            margin: 15px 0;
+            color: #de63b1;
+        }
+        .card p {
+            padding: 0 15px 15px;
+            color: #bf5b97;
+        }
+  footer {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            backdrop-filter: blur(10px);
+        }
+
+
+        footer p {
+            margin: 0;
+        }
+
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+
     </style>
 </head>
 <body>
-    <a href="Mission 1/index.html">Mission 1</a>
-    <a href="Mission 2/">Mission 2</a>
-    <a href="TP1/index.html">TP1</a>
-    <a href="TP2/index.html">TP2</a>
-    <a href="tp3/index.html">TP3</a>
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header>
+    <nav>
+        <a href="Mission 1/index.html">Mission 1</a>
+        <a href="Mission 2/">Mission 2</a>
+        <a href="TP1/index.html">TP1</a>
+        <a href="TP2/index.html">TP2</a>
+        <a href="tp3/index.html">TP3</a>
+    </nav>
+    <div class="content">
+        <div class="card">
+           
+            <h2>Mission 1</h2>
+            <p>Présentation des métiers ainsi que l'école</p>
+        </div>
+        <div class="card">
+           
+            <h2>Mission 2</h2>
+            <p>Portail d'information du BTS SIO</p>
+        </div>
+   
+    </div>
+ <footer>
+        <p>© 2024 Mon Portfolio | Construit avec passion. <a href="#">Mentions légales</a></p>
+    </footer>
+
+
 </body>
 </html>

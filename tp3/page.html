@@ -1,97 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-<style>
-    body{
-        font-family: 'Courier New', Courier, monospace;
-        margin: 0;
-        padding: 0;
-
-    }
-    header{
-        background-color: rgb(255, 158, 219);
-        color: aliceblue;
-        text-align: center;
-        padding: 20px;
-    }
-    nav{
-        background-color: rgb(241, 103, 235);
-        overflow: hidden;
-
-    }
-    nav a {
-        float: left;
-        display: block;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    nav a:hover {
-        background-color: rgb(144, 39, 200);
-        color: black;
-    }
-    section{
-        padding: 20px;
-
-    }
-    footer{
-        background-color: rgb(241, 155, 238);
-        color: aliceblue;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-       
-
-.home-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    background-color: #a554b9; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte */
-    text-decoration: none; /* Enlever la décoration du lien */
-    border-radius: 5px; /* Coins arrondis */
-    font-size: 16px; /* Taille du texte */
-    font-weight: bold; /* Texte en gras */
-    text-align: center; /* Centrer le texte */
-    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
-}
-
-.home-button:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
-}
-
-</style>
+    <title>Page d'accueil bien structurée</title>
+    <link rel="stylesheet" href="page.css">
 </head>
 <body>
-    <header>Page d'accueil bien structuré</header>
+
+    <header>
+        <h1>Page d'accueil bien structurée</h1>
+    </header>
 
     <nav>
-        <a href="#home">accueil</a>
-        <a href="#about">A propos</a>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
         <a href="#contact">Contact</a>
     </nav>
-    <a href="../index.html" class="home-button">Retour à l'accueil</a>
-    <section>
-        <h2> A propos de nous</h2>
-        <p>Ceci est une exemple de mise en page d'une page HTML avec des balises de base</p>
-        <h3>Services</h3>
+
+    <div class="button-container">
+        <a href="../index.html" class="home-button">Retour à l'accueil</a>
+    </div>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Ceci est un exemple de mise en page d'une page HTML avec des balises de base.</p>
+        
+        <h3>Nos Services</h3>
         <ul>
             <li>Conception de site web</li>
             <li>Développement d'application</li>
             <li>SEO et marketing</li>
         </ul>
     </section>
-    
+
     <footer>
-        <p>&copy;2024 TP BTS SIO . Tous droits réservés</p>
+        <p>&copy; 2024 TP BTS SIO. Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>
