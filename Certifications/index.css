@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(to right, #f7d1d1, #e6d1f0); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.diplomes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.diplome {
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+.diplome img {
+    width: 150px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.diplome:hover {
+    transform: scale(1.1); 
+}
+
+.diplome:focus img {
+    transform: scale(1.5);
+}
