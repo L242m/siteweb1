@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire d'inscription</h1>
+    </header>
+
+    <section class="form-section">
+        <form action="" method="POST">
+            <!-- Pseudo -->
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo" placeholder="Entrez votre pseudo" maxlength="50" required>
+            
+            <!-- Mot de passe -->
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            
+            <!-- Prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+            <!-- Email -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <!-- Avatar -->
+            <label for="avatar">Photo :</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*">
+
+            <!-- Pays -->
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays">
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <!-- Fruit préféré -->
+            <label>Fruit préféré :</label>
+            <div class="radio-group">
+                <input type="radio" id="fraise" name="fruit" value="fraise">
+                <label for="fraise">Fraise</label>
+                
+                <input type="radio" id="framboise" name="fruit" value="framboise">
+                <label for="framboise">Framboise</label>
+                
+                <input type="radio" id="cassis" name="fruit" value="cassis">
+                <label for="cassis">Cassis</label>
+            </div>
+
+            <!-- Sexe -->
+            <label>Sexe :</label>
+            <div class="radio-group">
+                <input type="radio" id="homme" name="sexe" value="homme" required>
+                <label for="homme">Homme</label>
+
+                <input type="radio" id="femme" name="sexe" value="femme" required>
+                <label for="femme">Femme</label>
+            </div>
+
+            <!-- Ville -->
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required>
+
+            <!-- Code postal -->
+            <label for="code-postal">Code postal :</label>
+            <input type="number" id="code-postal" name="code-postal" placeholder="Entrez votre code postal" required>
+
+            <!-- Adresse -->
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required>
+
+            <!-- Date de naissance -->
+            <label for="date-naissance">Date de naissance :</label>
+            <input type="date" id="date-naissance" name="date-naissance" required>
+
+            <!-- Jauge -->
+            <label for="jauge">Jauge :</label>
+            <input type="range" id="jauge" name="jauge" min="0" max="100">
+
+            <!-- Téléphone -->
+            <label for="telephone">Numéro de Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone">
+
+            <!-- Recherche -->
+            <label for="recherche">Recherche :</label>
+            <input type="search" id="recherche" name="recherche" placeholder="Recherche...">
+
+            <!-- URL -->
+            <label for="url">Votre site web :</label>
+            <input type="url" id="url" name="url" placeholder="https://votresite.com">
+
+            <!-- Choix de couleur -->
+            <label for="couleur">Choisissez une couleur :</label>
+            <input type="color" id="couleur" name="couleur">
+
+            <!-- Bouton de validation -->
+            <input type="submit" value="Valider" class="btn">
+
+        </form>
+    </section>
+
+    <!-- Bouton de retour à l'accueil -->
+    <div class="back-home">
+        <a href="index.html" class="btn">Retour au sommaire</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TEDx Paris. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+>
