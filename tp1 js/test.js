@@ -7,8 +7,11 @@ function test_age() {
     }
     else {
         document.write("Vous êtes majeur");
-        document.body.style.backgroundcolor="green";
+        document.body.style.backgroundColor = "green";
     }
+
+    // Ajouter un bouton "Retour"
+    document.write('<br><button onclick="retour()">Retour</button>');
 }
 
 function test_age() {
@@ -51,8 +54,10 @@ function calcul_moyenne() {
             document.body.style.backgroundColor = "lightgreen";
         }
     }
-}
 
+    // Ajouter un bouton "Retour"
+    document.write('<br><button onclick="retour()">Retour</button>');
+}
 
 function test_couleur() {
     let couleur = prompt("Donner une couleur en anglais");
