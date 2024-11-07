@@ -8,33 +8,34 @@
 </head>
 <body>
     <div class="container">
+        <button class="home-button" onclick="window.location.href='../index.html'">Retour à l'accueil</button>
+        <h1>Calculatrice</h1>
         <div class="calculator">
             <input type="text" id="display" disabled>
             <div class="buttons">
-                <button class="btn" onclick="appendNumber(7)">7</button>
-                <button class="btn" onclick="appendNumber(8)">8</button>
-                <button class="btn" onclick="appendNumber(9)">9</button>
-                <button class="btn operator" onclick="appendOperator('/')">/</button>
-                
-                <button class="btn" onclick="appendNumber(4)">4</button>
-                <button class="btn" onclick="appendNumber(5)">5</button>
-                <button class="btn" onclick="appendNumber(6)">6</button>
-                <button class="btn operator" onclick="appendOperator('*')">*</button>
-                
-                <button class="btn" onclick="appendNumber(1)">1</button>
-                <button class="btn" onclick="appendNumber(2)">2</button>
-                <button class="btn" onclick="appendNumber(3)">3</button>
-                <button class="btn operator" onclick="appendOperator('-')">-</button>
-                
-                <button class="btn" onclick="appendNumber(0)">0</button>
-                <button class="btn" onclick="clearDisplay()">C</button>
-                <button class="btn operator" onclick="appendOperator('+')">+</button>
-                <button class="btn equal" onclick="calculate()">=</button>
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+                <button onclick="operation('+')">+</button>
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+                <button onclick="operation('-')">-</button>
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+                <button onclick="operation('*')">*</button>
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="operation('/')">/</button>
             </div>
-            <button class="back-btn" onclick="window.location.href='../index.html'">Retour à l'accueil</button>
+            <div id="parity">
+                <p id="parity-result">Parité: -</p>
+            </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
+

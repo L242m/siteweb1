@@ -1,26 +1,44 @@
-let currentInput = "";
+let currentInput = '';
+let result = 0;
 
 function appendNumber(number) {
     currentInput += number;
-    document.getElementById('display').value = currentInput;
+    updateDisplay();
+    checkParity();
 }
 
-function appendOperator(operator) {
-    currentInput += " " + operator + " ";
-    document.getElementById('display').value = currentInput;
+function operation(op) {
+    currentInput += ` ${op} `;
+    updateDisplay();
 }
 
 function clearDisplay() {
-    currentInput = "";
-    document.getElementById('display').value = "";
+    currentInput = '';
+    result = 0;
+    updateDisplay();
+    document.getElementById('parity-result').textContent = 'Parité: -';
 }
 
-function calculate() {
+function calculateResult() {
     try {
-        currentInput = eval(currentInput).toString();
-        document.getElementById('display').value = currentInput;
+        result = eval(currentInput);
+        currentInput = result.toString();
+        updateDisplay();
+        checkParity();
     } catch (e) {
-        document.getElementById('display').value = "Erreur";
-        currentInput = "";
+        currentInput = 'Erreur';
+        updateDisplay();
+    }
+}
+
+function updateDisplay() {
+    document.getElementById('display').value = currentInput;
+}
+
+function checkParity() {
+    const number = parseInt(currentInput.replace(/[^\d.-]/g, ''), 10);
+    if (!isNaN(number)) {
+        const parity = (number % 2 === 0) ? 'Pair' : 'Impair';
+        document.getElementById('parity-result').textContent = `Parité: ${parity}`;
     }
 }

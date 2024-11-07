@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture en JavaScript</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Facture en JavaScript</h1>
+        </header>
+
+        <div class="invoice-table">
+            <div class="table-header">
+                <div class="table-cell">Article</div>
+                <div class="table-cell">Prix</div>
+                <div class="table-cell">Quantité</div>
+                <div class="table-cell">Résultat</div>
+            </div>
+
+           
+            <div class="input-row">
+                <input class="table-cell" type="text" id="article1" placeholder="Nom de l'article">
+                <input class="table-cell" type="number" id="prix1" placeholder="Entrer le prix">
+                <input class="table-cell" type="number" id="quantité1" placeholder="Quantité">
+                <input class="table-cell result" type="text" id="result1" placeholder="0" disabled>
+            </div>
+<br>
+            <div class="input-row">
+                <input class="table-cell" type="text" id="article2" placeholder="Nom de l'article">
+                <input class="table-cell" type="number" id="prix2" placeholder="Entrer le prix">
+                <input class="table-cell" type="number" id="quantité2" placeholder="Quantité">
+                <input class="table-cell result" type="text" id="result2" placeholder="0" disabled>
+            </div>
+<br>
+            <div class="input-row">
+                <input class="table-cell" type="text" id="article3" placeholder="Nom de l'article">
+                <input class="table-cell" type="number" id="prix3" placeholder="Entrer le prix">
+                <input class="table-cell" type="number" id="quantité3" placeholder="Quantité">
+                <input class="table-cell result" type="text" id="result3" placeholder="0" disabled>
+            </div>
+<br>
+            <div class="action-row">
+                <button class="button" onclick="reset()">Réinitialiser</button>
+                <br>
+                <button class="button" onclick="calculer()">Calculer</button>
+                <input class="table-cell result" type="text" id="totalResult" placeholder="Total" disabled>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button id="home-button" onclick="window.location.href='../index.html'">Retour à l'accueil</button>
+        </div>
+    </div>
+</body>
+
+</html>
