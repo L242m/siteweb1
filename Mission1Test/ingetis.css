@@ -1,0 +1,113 @@
+/* ingetis.css */
+
+/* Réinitialisation de base et configuration globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Container principal avec effet de verre */
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2em;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin: 2em auto;
+    position: relative;
+}
+
+/* Contenu principal */
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #2e384d;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    color: #6c757d;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/* Information de l'école */
+.school-info {
+    margin-top: 2em;
+    color: #4a4e69;
+}
+
+.school-info h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2e384d;
+    margin-bottom: 0.5em;
+}
+
+.school-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Style de la carte Google Maps */
+.map iframe {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton de retour à l'accueil */
+.back-home .btn {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 1.8em;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.back-home .btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Pied de page */
+footer {
+    margin-top: 2em;
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Animation de fond de particules */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #9ba4b4, #c5ccd3);
+}

@@ -1,0 +1,127 @@
+/* backend.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3a3a52;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(115deg, #bb6bd9, #3a3a52);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2em;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    text-align: center;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #dc85f7;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #e1e5f2;
+    margin-bottom: 2em;
+}
+
+.job-info h2,
+.job-info h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.job-info p {
+    font-size: 1em;
+    color: #d3d3e7;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+.skill-item {
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.progress {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 0.5em;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #dc85f7;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.btn, .home-button {
+    display: inline-block;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    margin-top: 1em;
+}
+
+.btn:hover, .home-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #e1e5f2;
+    font-size: 0.9em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+iframe {
+    display: block;
+    margin: 2em auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
